@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14980\viewh10260\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Stroop Task with a Twist\
+\
+
+\f1\b0 By Lisa Thelen and Lizzy Da Rocha Bazilio.\
+This experiment was completed on 08-12-2020.\
+
+\f0\b \
+
+\f1\b0 The Stroop Task with a Twist experiment compares the Standard Stroop Task with the Twist Stroop Task.\
+The Twist Stroop Task tests whether the reaction time is affected by adding a distractor word.
+\f0\b \
+\
+File Descriptions\
+
+\f2\i\b0 StroopTask.m
+\f1\i0 \
+This script initiates the complete experiment once you run it. It calls the run_Ridley.m function. It displays the instructions, initiates the practice rounds, Standard Stroop Task and Twist Stroop Task. Finally, it saves all the data per subject.\
+\
+
+\f2\i run_Ridley.m
+\f1\i0 \
+Function that measures the reaction time, records which buttons are pressed by the subject and checks the correctness of the button pressed. It calls the Ridley.m and the RidleyStandard.m function. \
+									\
+
+\f2\i Ridley.m
+\f1\i0 \
+Function that is called in the run_Ridley.m to initiate the Twist Stroop task. It picks the target and distractor ink colour and word according to the condition and combination and determines the location of the target and distractor in the figurer. It plots the target and distractor accordingly using put_stroop_inFigure.m and ensures the arrow is pointing to the target.\
+\
+
+\f2\i RidleyStandard.m
+\f1\i0 \
+Function that is called in the run_Ridley.m to initiate the Standard Stroop task. It picks an ink colour for the word and determines the word according to the condition. It plots the word in the figure using put_stroop_inFigure.m.\
+									\
+
+\f2\i pickone.m
+\f1\i0 \
+Function that pick a random element from a vector or cell array.\
+\
+
+\f2\i popupWhite.m
+\f1\i0 \
+Function that displays a white pop-up message in a figure.\
+\
+
+\f2\i put_stroop_inFigure.m
+\f1\i0 \
+Function that places a word with a color in a figure.\
+\
+
+\f0\b License\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 Please ensure that all files are saved in the same folder, this is the folder that must be specified under "Current Folder" in MATLAB.\
+Execute the StroopTask.m script in MATLAB, version R2020b.\
+
+\f0\b \
+}
